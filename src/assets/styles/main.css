@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+ul.desktop li {
+  position: relative;
+  margin-left: 0.5rem;
+  padding-bottom: 0.5rem !important;
+}
+ul.desktop li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(2, 175, 255);
+  transition: all 400ms;
+}
+ul.desktop li:hover::before {
+  width: 100%;
+}
+
+.heroSection:last-child {
+  width: 50%;
+}/*# sourceMappingURL=main.css.map */
