@@ -3,6 +3,23 @@
   font-family: "Poppins", sans-serif;
 }
 
+.nav img {
+  width: 5%;
+}
+
+.mob-nav {
+  z-index: 1000 !important;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #02afff 0%, #25baff 100%) !important;
+  color: #fff;
+}
+
+.btn {
+  background-color: #02afff !important;
+}
+
 ul.desktop li {
   position: relative;
   margin-left: 0.5rem;
@@ -15,13 +32,46 @@ ul.desktop li::before {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: rgb(2, 175, 255);
+  background-color: #fff;
   transition: all 400ms;
 }
 ul.desktop li:hover::before {
   width: 100%;
 }
 
-.heroSection:last-child {
-  width: 50%;
+.hero button {
+  background-color: #fff;
+  color: #02afff;
+}
+
+.custom-shape-divider-bottom-1686642048 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1686642048 svg {
+  position: relative;
+  display: block;
+  width: calc(130% + 1.3px);
+  height: 97px;
+}
+
+.custom-shape-divider-bottom-1686642048 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.service-box {
+  transition: all 300ms;
+}
+.service-box:hover {
+  background-color: #02afff;
+  color: #fff;
+}
+.service-box:hover svg path {
+  color: #fff !important;
 }/*# sourceMappingURL=main.css.map */

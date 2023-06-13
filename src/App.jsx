@@ -1,16 +1,18 @@
-import React, { useState } from 'react'
 import Navbar from './components/NavBar';
 import HeroSection from './components/HeroSection';
+import Contact from './components/contact';
+import About from './components/about';
+import Service from './components/service';
 
 const App = () => {
 
   return (
     <>
       <Navbar />
-      <div>
-
       <HeroSection/>
-      </div>
+      <Service/>
+      <About/>
+      <Contact/>
     </>
   )
 }
