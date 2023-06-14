@@ -5,6 +5,7 @@ import About from './components/about';
 import Service from './components/service';
 import Footer from './components/footer';
 import FacebookPost from './components/fbPost';
+import LatestNews from './components/latestNews';
 
 const App = () => {
 
@@ -12,7 +13,8 @@ const App = () => {
     <>
       <Navbar />
       <HeroSection />
-      <FacebookPost/>
+      <FacebookPost />
+      {/* <LatestNews/> */}
       <Service />
       <About />
       <Contact />
