@@ -4,22 +4,28 @@ $primary: #02afff;
 
 * {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
-.nav{
-    img{
+
+.nav {
+    img {
         width: 5%;
     }
 }
-.mob-nav{
+
+.mob-nav {
     z-index: 1000 !important;
 }
+
 .gradient {
     background: linear-gradient(90deg, $primary 0%, #25baff 100%) !important;
     color: #fff;
-  }
-  .btn{
+}
+
+.btn {
     background-color: $primary !important;
-  }
+}
+
 ul.desktop {
     li {
         position: relative;
@@ -42,8 +48,9 @@ ul.desktop {
         }
     }
 }
-.hero{
-    button{
+
+.hero {
+    button {
         background-color: #fff;
         color: $primary;
     }
@@ -70,12 +77,33 @@ ul.desktop {
     fill: #FFFFFF;
 }
 
-.service-box{
+.about, .contact{
+    img{
+        border-radius: 25px;
+        overflow: hidden;
+        transition: all 400ms;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    p{
+        line-height: 35px;
+    }
+}
+
+.service-box {
     transition: all 300ms;
-    &:hover{
+
+    svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    &:hover {
         background-color: $primary;
         color: #fff;
-        svg path{
+
+        svg path {
             color: #fff !important;
         }
     }

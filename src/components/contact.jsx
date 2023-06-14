@@ -1,9 +1,9 @@
 export default function Contact() {
   return (
     <>
-      <div className="max-w-[1240px] mx-auto p-4 my-4">
+      <div id="contact" className="contact max-w-[1240px] mx-auto p-4 my-4">
         <section className="mb-2">
-          <h2 className="mb-6 text-3xl text-center font-bold">Contact us</h2>
+          <h2 className="my-6 text-3xl text-center font-bold">Contact us</h2>
           <div className="flex flex-wrap items-center">
             <div className="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
               <p className="mb-6">

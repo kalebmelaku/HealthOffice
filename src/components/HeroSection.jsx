@@ -4,7 +4,7 @@ import HeroLottie from '../assets/lotties/hero.json';
 const HeroSection = () => {
     return (
         <>
-    <div className="pt-8 pb-24 hero gradient relative">
+    <div id="home" className="pt-8 pb-24 hero gradient relative">
       <div className="max-w-[1240px] px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
 
         <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
