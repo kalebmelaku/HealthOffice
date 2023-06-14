@@ -7,11 +7,12 @@ import {AiFillEnvironment} from 'react-icons/ai'
 export default function Service() {
    return (
       <>
-         <section id="services" className="max-w-[1240px] px-3 mx-auto pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
+         <div className="services mt-10">
+         <section id="services" className="max-w-[1240px] px-3 mx-auto py-10  lg:pb-[90px]">
             <div className="container mx-auto">
                <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4">
-                     <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-10">
+                     <div className="mx-auto mb-12 pt-3 max-w-[510px] text-center lg:mb-10">
                         <h2 className="mb-6 text-3xl text-center font-bold">Our Services</h2>
                      </div>
                   </div>
@@ -61,7 +62,8 @@ export default function Service() {
                      
                </div>
             </div>
-         </section>
+            </section>
+            </div>
       </>
    );
 }

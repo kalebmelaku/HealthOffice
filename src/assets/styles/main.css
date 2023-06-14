@@ -66,16 +66,23 @@ ul.desktop li:hover::before {
   fill: #FFFFFF;
 }
 
-.about img, .contact img {
+.about img,
+.contact img {
   border-radius: 25px;
   overflow: hidden;
   transition: all 400ms;
 }
-.about img:hover, .contact img:hover {
+.about img:hover,
+.contact img:hover {
   transform: scale(1.2);
 }
-.about p, .contact p {
+.about p,
+.contact p {
   line-height: 35px;
+}
+
+.services {
+  background-color: #8adaff;
 }
 
 .service-box {
@@ -91,4 +98,9 @@ ul.desktop li:hover::before {
 }
 .service-box:hover svg path {
   color: #fff !important;
+}
+
+iframe {
+  display: block;
+  width: 100% !important;
 }/*# sourceMappingURL=main.css.map */

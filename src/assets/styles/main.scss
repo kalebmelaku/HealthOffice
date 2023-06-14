@@ -77,18 +77,25 @@ ul.desktop {
     fill: #FFFFFF;
 }
 
-.about, .contact{
-    img{
+.about,
+.contact {
+    img {
         border-radius: 25px;
         overflow: hidden;
         transition: all 400ms;
-        &:hover{
+
+        &:hover {
             transform: scale(1.2);
         }
     }
-    p{
+
+    p {
         line-height: 35px;
     }
+}
+
+.services {
+    background-color: #8adaff;
 }
 
 .service-box {
@@ -107,4 +114,9 @@ ul.desktop {
             color: #fff !important;
         }
     }
+}
+
+iframe {
+    display: block;
+    width: 100% !important;
 }

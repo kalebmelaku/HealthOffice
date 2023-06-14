@@ -20,7 +20,7 @@ const Navbar = () => {
                         <a href="#">Home</a>
                     </li>
                     <li className='p-4'>
-                        <a href="#">Company</a>
+                        <a href="#news">News</a>
                     </li>
                     <li className='p-4'>
                         <a href="#services">Services</a>
@@ -37,11 +37,11 @@ const Navbar = () => {
                 </div>
                 <ul className={nav ? ' mob-nav fixed text-white left-0 top-0 w-[60%] h-full bg-[#02afff] ease-in-out duration-500 z-100' : 'ease-in-out duration-500 fixed left-[-100%]'}>
 
-                    <li className='p-4 border-b border-white-600'>  <a href="#">Home</a></li>
-                    <li className='p-4 border-b border-white-600'> <a href="#">  <a href="#">Resources</a></a></li>
-                    <li className='p-4 border-b border-white-600'> <a href="#">Resources</a></li>
-                    <li className='p-4 border-b border-white-600'> <a href="#">About</a></li>
-                    <li className='p-4'>  <a href="#">Contact</a></li>
+                    <li className='p-4 border-b border-white-600'>  <a href="#home">Home</a></li>
+                    <li className='p-4 border-b border-white-600'> <a href="#blog">News</a></li>
+                    <li className='p-4 border-b border-white-600'> <a href="#services">Service</a></li>
+                    <li className='p-4 border-b border-white-600'> <a href="#about">About</a></li>
+                    <li className='p-4'>  <a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
