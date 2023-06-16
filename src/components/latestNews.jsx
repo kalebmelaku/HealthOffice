@@ -28,11 +28,7 @@ export default function LatestNews() {
         <div>
             {news.map((item) => (
                 <div key={item.id}>
-                    {/* <h2>{item.title}</h2>
-                    <p>{item.body}</p>
-                    <img src={item.image} alt={item.title} /> */}
-                    
-                <LatestNewsBox id={item.id} title={item.title} />
+                    <LatestNewsBox id={item.id} title={item.title} />
                 </div>
             ))}
         </div>

@@ -17,19 +17,19 @@ const Navbar = () => {
                 <img src={logo} />
                 <ul className='desktop hidden md:flex'>
                     <li className='p-4'>
-                        <a href="#">Home</a>
+                        <a href="/#">Home</a>
                     </li>
                     <li className='p-4'>
-                        <a href="#news">News</a>
+                        <a href="/#news">News</a>
                     </li>
                     <li className='p-4'>
-                        <a href="#services">Services</a>
+                        <a href="/#services">Services</a>
                     </li>
                     <li className='p-4'>
-                        <a href="#about">About</a>
+                        <a href="/#about">About</a>
                     </li>
                     <li className='p-4'>
-                        <a href="#contact">Contact</a>
+                        <a href="/#contact">Contact</a>
                     </li>
                 </ul>
                 <div onClick={handleNav} className='block md:hidden'>
@@ -37,11 +37,11 @@ const Navbar = () => {
                 </div>
                 <ul className={nav ? ' mob-nav fixed text-white left-0 top-0 w-[60%] h-full bg-[#02afff] ease-in-out duration-500 z-100' : 'ease-in-out duration-500 fixed left-[-100%]'}>
 
-                    <li className='p-4 border-b border-white-600'>  <a href="#home">Home</a></li>
-                    <li className='p-4 border-b border-white-600'> <a href="#news">News</a></li>
-                    <li className='p-4 border-b border-white-600'> <a href="#services">Service</a></li>
-                    <li className='p-4 border-b border-white-600'> <a href="#about">About</a></li>
-                    <li className='p-4'>  <a href="#contact">Contact</a></li>
+                    <li className='p-4 border-b border-white-600'>  <a href="/#home">Home</a></li>
+                    <li className='p-4 border-b border-white-600'> <a href="/#news">News</a></li>
+                    <li className='p-4 border-b border-white-600'> <a href="/#services">Service</a></li>
+                    <li className='p-4 border-b border-white-600'> <a href="/#about">About</a></li>
+                    <li className='p-4'>  <a href="/#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>

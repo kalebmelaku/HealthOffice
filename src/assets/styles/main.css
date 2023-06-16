@@ -106,4 +106,9 @@ iframe {
 
 .text-cont a {
   color: #02afff;
+}
+
+.hero-section img {
+  max-height: 60vh;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
