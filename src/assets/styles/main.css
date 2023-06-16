@@ -104,19 +104,6 @@ iframe {
   max-width: 100%;
 }
 
-.latest-news {
-  width: 100% !important;
-  height: 6rem !important;
-  overflow: hidden !important;
-  margin-bottom: 2.5rem;
-}
-.latest-news .img-cont {
-  background-color: blue;
-  width: 15rem !important;
-  height: 100% !important;
-  overflow: hidden;
-}
-.latest-news .img-cont img {
-  width: 100%;
-  height: 100%;
+.text-cont a {
+  color: #02afff;
 }/*# sourceMappingURL=main.css.map */
