@@ -15,7 +15,10 @@ export default function LatestNews() {
             //     id: doc.id,
             // })));
             const snapshot = await getDocs(q);
-            const data = snapshot.docs.map(doc => doc.data());
+            const data = snapshot.docs.map((doc) => ({
+                ...doc.data(),
+                id: doc.id
+            }));
             setNews(data);
         };
         getNews();
@@ -23,13 +26,13 @@ export default function LatestNews() {
 
     return (
         <div>
-            {news.map((item, index) => (
-                <div key={index}>
+            {news.map((item) => (
+                <div key={item.id}>
                     {/* <h2>{item.title}</h2>
                     <p>{item.body}</p>
                     <img src={item.image} alt={item.title} /> */}
                     
-                <LatestNewsBox title={item.title} img={item.img} />
+                <LatestNewsBox id={item.id} title={item.title} />
                 </div>
             ))}
         </div>

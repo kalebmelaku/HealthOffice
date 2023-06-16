@@ -1,26 +1,16 @@
-import Navbar from './components/NavBar';
-import HeroSection from './components/HeroSection';
-import Contact from './components/contact';
-import About from './components/about';
-import Service from './components/service';
-import Footer from './components/footer';
-import FacebookPost from './components/fbPost';
-import LatestNews from './components/latestNews';
+import {Routes, Route} from "react-router-dom"
+import Home from "./page/home";
+import NewsDetail from "./page/newsDetail";
+// import LatestNews from './components/latestNews';
 
-const App = () => {
+export default function App() {
 
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <FacebookPost />
-      {/* <LatestNews/> */}
-      <Service />
-      <About />
-      <Contact />
-      <Footer />
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/newsDetail' element={<NewsDetail />}/>
+      </Routes>
     </>
   );
-};
-
-export default App;
+}

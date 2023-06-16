@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import LatestNews from "./latestNews";
 
 export default function FacebookPost() {

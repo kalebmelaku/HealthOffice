@@ -1,10 +1,28 @@
 import ServiceBox from "./serviceBox";
-import { FaChild, FaDisease, FaNutritionix, FaVirusSlash } from 'react-icons/fa'
-import { RiMentalHealthFill } from 'react-icons/ri'
-import { MdFamilyRestroom } from 'react-icons/md'
-import {AiFillEnvironment} from 'react-icons/ai'
+import { useEffect, useState } from "react";
+import { collection, getDocs, query } from "firebase/firestore";
+import { db } from "../config/firebase";
 
 export default function Service() {
+   const [service, setService] = useState([]);
+   const newsCollectionRef = collection(db, "services");
+   const q = query(newsCollectionRef);
+   useEffect(() => {
+       const getNews = async () => {
+           // const data = await getDocs(newsCollectionRef);
+           // setNews(data.docs.map(doc => ({
+           //     ...doc.data(),
+           //     id: doc.id,
+           // })));
+           const snapshot = await getDocs(q);
+           const data = snapshot.docs.map((doc) => ({
+            ...doc.data(),
+            id: doc.id
+        }));
+           setService(data);
+       };
+       getNews();
+   }, []);
    return (
       <>
          <div className="services mt-10">
@@ -18,47 +36,15 @@ export default function Service() {
                   </div>
                </div>
                <div className="-mx-4 flex flex-wrap">
-
-                  <ServiceBox
-                     title="Maternity and child care"
-                     body="Provides care for pregnant women, mothers, and children, including prenatal care, childbirth, and postnatal care."
-                     icon={<FaChild />}
-                     />
-                     
-                  <ServiceBox
-                     title="Communicable disease control"
-                     body="Prevents and controls the spread of communicable diseases, such as HIV/AIDS, malaria, and tuberculosis"
-                     icon= {<FaDisease/>}   
-                  />
-                  <ServiceBox
-                     title="Nutrition"
-                     body="Provides nutrition education and counseling, and supplements to improve the nutritional status of children and pregnant women." 
-                     icon= {<FaNutritionix/>}   
-                     />
-                     
-                  <ServiceBox
-                     title="Mental health"
-                     body="Provides mental health services, such as counseling and therapy, to people with mental health problems." 
-                     icon= {<RiMentalHealthFill/>}   
-                     />
-                     
-                  <ServiceBox
-                     title="Family planning"
-                     body="Provides family planning services, such as contraception and counseling, to help people plan their families." 
-                     icon= {<MdFamilyRestroom/>}   
-                     />
-                     
-                  <ServiceBox
-                     title="Environmental health"
-                     body="Promotes healthy living environments by providing safe water, sanitation, and waste disposal services." 
-                     icon= {<AiFillEnvironment/>} 
-                     />
-                     
-                  <ServiceBox
-                     title="HIV/AIDS prevention and treatment"
-                     body="Provides HIV/AIDS prevention and treatment services, such as counseling, testing, and antiretroviral therapy." 
-                     icon={<FaVirusSlash/>}
-                     />
+                  {service.map((item)=>(
+                        <> 
+                           <ServiceBox 
+                              title={item.title}
+                              body={item.desc}
+                           />
+                        </>
+                  ))}
+        
                      
                </div>
             </div>
