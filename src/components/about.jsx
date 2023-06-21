@@ -1,3 +1,4 @@
+import aboutPic from '../assets/img/aboutPic.jpg';
 export default function About() {
     return (
         <>
@@ -16,12 +17,12 @@ export default function About() {
                             building for healthcare workers, and by providing essential medicines and supplies.</p>
                     </div>
                     <div className="w-full overflow-hidden lg:w-8/12">
-                        <img className="w-full h-full" src="https://scontent.fadd1-1.fna.fbcdn.net/v/t39.30808-6/350805475_177709061926317_3807789273933245689_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=thml-T3mMt4AX_zJjGw&_nc_ht=scontent.fadd1-1.fna&oh=00_AfAfNqG3L7hvs57WuphirHMGbxuqfx_Qp8n9r-zj26VCoQ&oe=648D9233" alt="A group of People" />
+                        <img className="w-full h-full" src={aboutPic} alt="A group of People" />
                     </div>
                 </div>
                 <div className="flex flex-col-reverse mt-24 lg:flex-row justify-between gap-16">
                     <div className="w-full overflow-hidden lg:w-8/12">
-                        <img className="w-full h-full" src="https://scontent.fadd1-1.fna.fbcdn.net/v/t39.30808-6/350805475_177709061926317_3807789273933245689_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=thml-T3mMt4AX_zJjGw&_nc_ht=scontent.fadd1-1.fna&oh=00_AfAfNqG3L7hvs57WuphirHMGbxuqfx_Qp8n9r-zj26VCoQ&oe=648D9233" alt="A group of People" />
+                        <img className="w-full h-full" src={aboutPic} alt="A group of People" />
                     </div>
                     <div className="w-full lg:w-5/12 flex flex-col justify-center">
 
